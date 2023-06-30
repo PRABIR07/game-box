@@ -32,7 +32,7 @@ const GenreList = ({selectedGenre,onSelectedGenre}:Props) => {
             <Image
             objectFit="cover"
               boxSize="30px"
-              borderRadius={8}
+              borderRadius={8} 
               src={getCroppedImageUrl(genre.image_background)}
             />
             <Button whiteSpace='normal' textAlign={"left"} fontWeight={genre.id === selectedGenre?.id ? 'bold': 'normal'} onClick={()=> onSelectedGenre(genre)} variant="link" fontSize="lg">
